@@ -19,7 +19,10 @@ PRODUCT_COPY_FILES += \
 # Prebuilt libraries from CodeAurora
 PRODUCT_COPY_FILES += \
     vendor/qcom/proprietary/system/lib/libv8.so:system/lib/libv8.so \
-    vendor/qcom/proprietary/system/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so 
+    vendor/qcom/proprietary/system/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
+    vendor/qcom/proprietary/system/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/qcom/proprietary/system/lib/libmmparser.so:system/lib/libmmparser.so \
+    vendor/qcom/proprietary/system/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so
 
 # All the blobs necessary for adreno
 PRODUCT_COPY_FILES += \
