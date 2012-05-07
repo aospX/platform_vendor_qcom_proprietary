@@ -13,3 +13,7 @@
 # limitations under the License.
 
 $(call inherit-product, vendor/qcom/proprietary/qcom-vendor-blobs.mk)
+
+# Vendor extension library
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=/system/lib/libqc-opt.so
