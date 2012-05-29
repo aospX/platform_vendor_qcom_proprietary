@@ -14,7 +14,8 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
-    vendor/qcom/proprietary/system/lib/libv8.so:obj/lib/libv8.so
+    vendor/qcom/proprietary/system/lib/libv8.so:obj/lib/libv8.so \
+    vendor/qcom/proprietary/system/lib/libqc-opt.so:obj/lib/libqc-opt.so
 
 # Prebuilt libraries from CodeAurora
 PRODUCT_COPY_FILES += \
