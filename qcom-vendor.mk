@@ -14,13 +14,17 @@
 
 # CodeAurora shared libraries
 PRODUCT_PACKAGES += \
-    libv8 \
     libqc-opt \
     libmm-color-convertor \
     libmmosal \
     libmmparser \
     libmmparser_divxdrmlib \
     libDivxDrm
+
+ifeq ($(DYNAMIC_SHARED_LIBV8SO),true)
+PRODUCT_PACKAGES += \
+    libv8
+endif
 
 # Vendor extension library
 PRODUCT_PROPERTY_OVERRIDES += \
